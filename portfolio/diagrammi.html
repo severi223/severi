@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>html Cheat Sheet</title>
-        <link rel="stylesheet" type="text/css" href="tyylit.css">
-    </head>
-    <body>
-        <p>
-            <a href="http://miravorne.fi" target"_blank" >Miravorne</a>
-            </p>
-              <table> 
-                    <a href ="index.html"> Takaisin
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
 
-                        </a>
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">clikkaa</div>
+<div id="panel">kiitos 29.99€ lahjoituksesta :)</div>
 
-              </table>
-    </body>
+</body>
 </html>
