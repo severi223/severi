@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>html Cheat Sheet</title>
-        <link rel="stylesheet" type="text/css" href="tyylit.css">
-    </head>
-    <body>
-     
-        <p>
-            <a href="http://miravorne.fi" target"_blank" >Miravorne</a>
-            </p>
-              <table> 
-                    <a href ="index.html"> Takaisin
 
-                        </a>
+<head>
+    <title>html Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="tyylits.css">
+</head>
 
-              </table>
-    </body>
+<body>
+    <div class="container">
+        <div class="box1">
+
+
+            <meta charset="utf-8">
+            <title>Numeron Arvaus Peli</title>
+            </head>
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+
+
+            <div class="container">
+                <div class="box1">
+
+                    <h1>Arvaa ikäni</h1>
+
+                    <p>Valitsimme randomin iän 10-20 väliltä</p>
+
+                    <div class="form">
+                        <label for="guessField">Vastauksesi: </label>
+                        <input type="text" id="guessField" class="guessField">
+                        <input type="submit" value="Lähetä vastaus" class="guessSubmit" id="submitguess">
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                // random value generated 
+                var y = Math.floor(Math.random() * 10 + 10);
+                // counting the number of guesses 
+                // made for correct Guess 
+                var guess = 1;
+                document.getElementById("submitguess").onclick = function () {
+                    // number guessed by user      
+                    var x = document.getElementById("guessField").value;
+                    if (x == y) {
+                        alert("Vihdoin! Arvasit oikein ikäni. "
+                            + guess + " yrityksellä ");
+                        window.open("http://miravorne.fi/materiaali/mytipt18/", "_blank");
+                    }
+                    else if (x > y) /* if guessed number is greater 
+                                           than actual number*/ {
+                        guess++;
+                        alert("Arvasit väärin. Olen nuorempi! Koita uudelleen.");
+                    }
+                    else {
+                        guess++;
+                        alert("Arvasit väärin. Olen vanhempi! Koita uudelleen.")
+                    }
+                } 
+            </script>
+
+
+</body>
+
 </html>

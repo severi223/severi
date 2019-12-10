@@ -1,0 +1,66 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@severi223 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+1
+00pantsa1/portfolio
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+portfolio/style.css
+ Panu plussaa mule
+56fc206 5 days ago
+33 lines (30 sloc)  467 Bytes
+  
+body{
+    background-image: url("aku2.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: maroon;
+}
+p {
+    color: green;
+}
+.blueParagraph{
+    color: blue;
+}
+#distinctParagraph{
+    color:maroon;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    margin: 50px;
+}
+
+.box1{
+    background-color: darkturquoise;
+    color: white;
+
+    border: 5px blue solid;
+    margin-left: 400px;
+    margin-top: 120px;
+    text-align: center;
+}
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
